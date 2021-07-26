@@ -3,9 +3,15 @@
 
 <head>
 	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<meta name="viewport"
+		  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+	<meta http-equiv="X-UA-Compatible"
+		  content="ie=edge">
+
 	<link rel="stylesheet" href="style.css">
+
 	<title>MAD</title>
 </head>
 
@@ -14,7 +20,8 @@
 		<div>Work in progress...</div>
 		
 		<nav class="nav">
-			<button class="btn--link">Home</button>
+			<button class="btn--link"
+					onclick="navigateToPage('home')">Home</button>
 
 			<button class="btn--link">About</button>
 
@@ -23,19 +30,66 @@
 	</header>
 
 	<main class="content">
-		<h1>Hey, I'm Mohamed</h1>
+		<section id="home"
+				 class="section">
+			<div class="home-section-content">
+				<h1>Hey, I'm Mohamed</h1>
 
-		<h3>Digital designer & Web Developer</h3>
-		
-		<button class="btn contact-btn">GET IN TOUCH</button>
+				<h3>Digital designer & Web Developer</h3>
+
+				<p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+				</p>
+
+				<button class="btn contact-btn"
+						onclick="navigateToPage('contact')">GET IN TOUCH</button>
+			</div>
+		</section>
+
+		<section id="contact"
+				 class="section is-disabled">
+			<div class="contact-section-content">
+				<h1>Contact me</h1>
+
+				<form class="form"
+					  id="contactForm"
+					  action="javascript:void(0);"
+					  onsubmit="sendMessage()">
+					<div class="form-group">
+						<label for="email">Email</label>
+
+						<input class="form-element"
+							   type="email"
+							   name="email"
+							   placeholder="example@email.com"
+							   id="email" />
+					</div>
+
+					<div class="form-group">
+						<label for="message">Message</label>
+
+						<textarea class="form-element"
+								  rows="6"
+								  draggable="false"
+								  name="message"
+								  placeholder="Type your message here"
+								  id="message"></textarea>
+					</div>
+
+					<button class="btn">Send</button>
+				</form>
+			</div>
+		</section>
 	</main>
 
 	<footer class="footer">
-		<button class="btn--link">Github</button>
+		<button class="btn--link" onclick="openUrl('https://www.github.com/aitdahane')">Github</button>
 
-		<button class="btn--link">Linkedin</button>
+		<button class="btn--link" onclick="openUrl('https://www.linkedin.com/in/aitdahane')">Linkedin</button>
 
 		<button class="btn--link">Twitter</button>
 	</footer>
+
+	<script src="scripts/app.js"></script>
 </body>
 </html>

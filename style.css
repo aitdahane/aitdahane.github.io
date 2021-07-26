@@ -8,14 +8,50 @@
   src: url(fonts/DidotLTStd-Roman.otf);
 }
 
+@font-face {
+  font-family: SegoeUI;
+  src: url(fonts/SegoeUI.ttf);
+}
+
 * {
   /* font-family: DidotLTStdRoman, 'Times New Roman', Times, serif; */
   font-family: Orator, Arial, Helvetica, sans-serif;
 }
 
+h1 {
+  font-size: 2rem;
+}
+
 h1, h2, h3, h4, h5, h6 {
   margin: 4px 0;
   font-weight: unset;
+}
+
+input {
+  box-sizing: border-box;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid #c6c6c6;
+  line-height: 3;
+  background-color: transparent;
+  font-family: sans-serif;
+}
+
+textarea {
+  box-sizing: border-box;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid #c6c6c6;
+  background-color: transparent;
+  font-family: sans-serif;
+  resize: none;
+}
+
+textarea:focus, input:focus {
+  outline: none;
+  border-bottom: 2px solid #1e1e1e;
 }
 
 .btn {
@@ -27,6 +63,7 @@ h1, h2, h3, h4, h5, h6 {
   cursor: pointer;
   font-size: 16px;
   padding: 6px 12px;
+  min-width: 166px;
 }
 
 .btn:hover {
@@ -48,9 +85,26 @@ h1, h2, h3, h4, h5, h6 {
   border-bottom: 1px solid #1e1e1e;
 }
 
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 16px;
+  margin-bottom: 24px;
+}
+
+.form-group label {
+  font-size: 13px;
+}
+
+.form-element {
+  margin-top: 12px;
+  width: 100%;
+}
+
 .container {
   position: relative;
-  margin: 0 8px;
+  margin: 0 24px;
   height: 100vh;
   background-color: #fbfbf9;
 }
@@ -69,19 +123,38 @@ h1, h2, h3, h4, h5, h6 {
 .content {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
+  width: 100%;
+  height: calc(100% - 60px);
+}
+
+.section {
+  display: flex;
   margin-top: 10%;
+  height: 100%;
+  width: 100%;
+}
+
+.section.is-disabled {
+  display: none;
+}
+
+.home-section-content {
   width: 100%;
   text-align: center;
 }
 
+.contact-section-content {
+  width: 50%;
+}
+
 .contact-btn {
-  margin-top: 8%;
+  margin-top: 24px;
 }
 
 .footer {
-  position: absolute;
-  bottom: 8px;
+  position: fixed;
+  bottom: 0;
   display: flex;
   align-items: center;
   justify-content: center;
