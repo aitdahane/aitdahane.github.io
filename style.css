@@ -56,10 +56,11 @@ textarea:focus, input:focus {
 
 .btn {
   box-sizing: border-box;
+  background-color: #1e1e1e;
+  color: #fbfbf9;
   border: 1px solid #1e1e1e;
   border-radius: 4px;
   line-height: 1.5;
-  background-color: #fbfbf9;
   cursor: pointer;
   font-size: 16px;
   padding: 6px 12px;
@@ -67,8 +68,8 @@ textarea:focus, input:focus {
 }
 
 .btn:hover {
-  background-color: #1e1e1e;
-  color: #fbfbf9;
+  background-color: #fbfbf9;
+  color: #1e1e1e;
 }
 
 .btn--link {
@@ -104,7 +105,7 @@ textarea:focus, input:focus {
 
 .container {
   position: relative;
-  margin: 0 24px;
+  padding: 0 24px;
   height: 100vh;
   background-color: #fbfbf9;
 }
@@ -130,7 +131,7 @@ textarea:focus, input:focus {
 
 .section {
   display: flex;
-  margin-top: 10%;
+  justify-content: center;
   height: 100%;
   width: 100%;
 }
@@ -140,16 +141,18 @@ textarea:focus, input:focus {
 }
 
 .home-section-content {
+  margin-top: 10%;
   width: 100%;
   text-align: center;
 }
 
 .contact-section-content {
-  width: 50%;
+  margin-top: 36px;
+  width: 70%;
 }
 
 .contact-btn {
-  margin-top: 24px;
+  margin-top: 36px;
 }
 
 .footer {
