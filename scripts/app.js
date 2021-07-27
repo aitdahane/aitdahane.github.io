@@ -1,3 +1,7 @@
+(function() {
+    emailjs.init("user_WLKz5YYQdsHP8G4EUWHSL");
+})();
+
 function navigateToPage(pageId) {
     const pageElement = document.getElementById(pageId);
     const allPagesElements = document.getElementsByClassName('section');
