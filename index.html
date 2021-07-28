@@ -17,16 +17,20 @@
 
 <body class="container">
 	<header class="header">
-		<div class="logo">MAD</div>
+		<div class="logo"
+				 onclick="navigateToPage('home')">MAD</div>
 		
 		<nav class="nav">
-			<button class="btn--link"
+			<button id="home-nav-link"
+							class="btn--link nav-link"
 							onclick="navigateToPage('home')">Home</button>
 
-			<button class="btn--link"
+			<button id="about-nav-link"
+							class="btn--link nav-link"
 							onclick="navigateToPage('about')">About</button>
 
-			<button class="btn--link"
+			<button id="contact-nav-link"
+							class="btn--link nav-link"
 							onclick="navigateToPage('contact')">Contact</button>
 		</nav>
 	</header>

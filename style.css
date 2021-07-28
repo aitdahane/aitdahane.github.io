@@ -83,8 +83,7 @@ textarea:focus, input:focus {
 }
 
 .btn:hover {
-  background-color: #fbfbf9;
-  color: #1e1e1e;
+  background-color: #383838;
 }
 
 .btn--link {
@@ -98,6 +97,10 @@ textarea:focus, input:focus {
 }
 
 .btn--link:hover {
+  border-bottom: 1px solid #1e1e1e;
+}
+
+.nav-link.is-active {
   border-bottom: 1px solid #1e1e1e;
 }
 
@@ -133,8 +136,10 @@ textarea:focus, input:focus {
 
 .logo {
   display: flex;
+  margin-left: 20px;
   font-family: Aquire, Orator, Arial, Helvetica, sans-serif;
-  font-size: 2rem;
+  font-size: 1.4rem;
+  cursor: pointer;
 }
 
 .nav {
@@ -186,7 +191,7 @@ textarea:focus, input:focus {
 
 .contact-btn {
   margin-top: 36px;
-  animation: fadeIn 1.5s;
+  animation: fadeIn 3s;
 }
 
 .footer {
