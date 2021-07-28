@@ -144,7 +144,11 @@ textarea:focus, input:focus {
 }
 
 .home-section-content {
-  margin-top: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 12%;
   width: 100%;
   text-align: center;
 }
