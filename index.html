@@ -17,30 +17,38 @@
 
 <body class="container">
 	<header class="header">
-		<div class="logo">Work in progress...</div>
+		<div class="logo">MAD</div>
 		
 		<nav class="nav">
 			<button class="btn--link"
 							onclick="navigateToPage('home')">Home</button>
 
-			<button class="btn--link">About</button>
+			<button class="btn--link"
+							onclick="navigateToPage('about')">About</button>
 
-			<button class="btn--link">Articles</button>
+			<button class="btn--link"
+							onclick="navigateToPage('contact')">Contact</button>
 		</nav>
 	</header>
 
 	<main class="content">
 		<section id="home"
-				 class="section">
+						 class="section">
 			<div class="home-section-content">
 				<h1>Hey, I'm Mohamed</h1>
 
 				<h3>Digital Designer & Web Developer</h3>
 
 				<button class="btn contact-btn"
-						onclick="navigateToPage('contact')">GET IN TOUCH</button>
+								onclick="navigateToPage('contact')">GET IN TOUCH</button>
 			</div>
 		</section>
+
+		<section id="about">
+			<div class="about-section-img"></div>
+			<div class="about-section-content"></div>
+		</section>
+		
 
 		<section id="contact"
 						 class="section is-disabled">

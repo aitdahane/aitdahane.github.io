@@ -13,6 +13,21 @@
   src: url(fonts/SegoeUI.ttf);
 }
 
+@font-face {
+  font-family: AquireLight;
+  src: url(fonts/AquireLight.otf);
+}
+
+@font-face {
+  font-family: Aquire;
+  src: url(fonts/Aquire.otf);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
 * {
   /* font-family: DidotLTStdRoman, 'Times New Roman', Times, serif; */
   font-family: Orator, Arial, Helvetica, sans-serif;
@@ -111,13 +126,15 @@ textarea:focus, input:focus {
 
 .header {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   width: 100%;
-  padding: 12px 0;
 }
 
 .logo {
   display: flex;
+  font-family: Aquire, Orator, Arial, Helvetica, sans-serif;
+  font-size: 2rem;
 }
 
 .nav {
@@ -151,15 +168,18 @@ textarea:focus, input:focus {
   margin-bottom: 12%;
   width: 100%;
   text-align: center;
+  animation: fadeIn 1s;
 }
 
 .contact-section-content {
   margin-top: 36px;
   width: 70%;
+  animation: fadeIn 1s;
 }
 
 .contact-btn {
   margin-top: 36px;
+  animation: fadeIn 1.5s;
 }
 
 .footer {
