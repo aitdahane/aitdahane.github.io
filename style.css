@@ -171,8 +171,15 @@ textarea:focus, input:focus {
   animation: fadeIn 1s;
 }
 
+.about-section-content {
+  margin-top: 36px;
+  width: 70%;
+  animation: fadeIn 1s;
+}
+
 .contact-section-content {
   margin-top: 36px;
+  margin-right: 20px;
   width: 70%;
   animation: fadeIn 1s;
 }
