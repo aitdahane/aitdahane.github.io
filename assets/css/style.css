@@ -1,26 +1,26 @@
 @font-face {
   font-family: Orator;
-  src: url(fonts/orator.otf);
+  src: url(../fonts/orator.otf);
 }
 
 @font-face {
   font-family: DidotLTStdRoman;
-  src: url(fonts/DidotLTStd-Roman.otf);
+  src: url(../fonts/DidotLTStd-Roman.otf);
 }
 
 @font-face {
   font-family: SegoeUI;
-  src: url(fonts/SegoeUI.ttf);
+  src: url(../fonts/SegoeUI.ttf);
 }
 
 @font-face {
   font-family: AquireLight;
-  src: url(fonts/AquireLight.otf);
+  src: url(../fonts/AquireLight.otf);
 }
 
 @font-face {
   font-family: Aquire;
-  src: url(fonts/Aquire.otf);
+  src: url(../fonts/Aquire.otf);
 }
 
 @keyframes fadeIn {
@@ -50,7 +50,6 @@ input {
   border-bottom: 1px solid #c6c6c6;
   line-height: 3;
   background-color: transparent;
-  font-family: sans-serif;
 }
 
 textarea {
@@ -60,7 +59,6 @@ textarea {
   border-right: none;
   border-bottom: 1px solid #c6c6c6;
   background-color: transparent;
-  font-family: sans-serif;
   resize: none;
 }
 
