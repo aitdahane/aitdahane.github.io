@@ -34,7 +34,11 @@
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 1.4rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -73,15 +77,23 @@ textarea:focus, input:focus {
   color: #fbfbf9;
   border: 1px solid #1e1e1e;
   border-radius: 4px;
-  line-height: 1.5;
+  line-height: 1;
   cursor: pointer;
   font-size: 16px;
-  padding: 6px 12px;
-  min-width: 166px;
+  padding: 8px 12px 4px 12px;
+  min-width: 140px;
+  text-decoration: none;
+  text-align: center;
 }
 
 .btn:hover {
-  background-color: #383838;
+  background-color: #fbfbf9;
+  color: #1e1e1e;
+}
+
+.btn--secondary {
+  background-color: #fbfbf9;
+  color: #1e1e1e;
 }
 
 .btn--link {
@@ -92,6 +104,8 @@ textarea:focus, input:focus {
   cursor: pointer;
   font-size: 16px;
   padding: 8px 0;
+  text-decoration: none;
+  color: inherit;
 }
 
 .btn--link:hover {
@@ -121,7 +135,7 @@ textarea:focus, input:focus {
 
 .container {
   position: relative;
-  height: 100vh;
+  padding: 16px;
   background-color: #fbfbf9;
 }
 
@@ -155,7 +169,6 @@ textarea:focus, input:focus {
 .section {
   display: flex;
   justify-content: center;
-  height: 100%;
   width: 100%;
 }
 
@@ -170,7 +183,7 @@ textarea:focus, input:focus {
   align-items: center;
   margin-bottom: 12%;
   width: 100%;
-  text-align: center;
+  margin-top: 200px;
   animation: fadeIn 1s;
 }
 
@@ -200,4 +213,37 @@ textarea:focus, input:focus {
   justify-content: center;
   width: 100%;
   padding: 12px 0;
+}
+
+@media screen and (max-width: 1000px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+}
+
+.mt-5 {
+  margin-top: 20px;
+}
+
+.mt-10 {
+  margin-top: 40px;
+}
+
+.mt-20 {
+  margin-top: 80px;
+}
+
+.sectionList {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding-top: 120px;
+}
+
+.big-letter {
+  font-size: 3rem;
 }
